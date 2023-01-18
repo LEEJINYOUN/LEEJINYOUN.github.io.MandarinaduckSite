@@ -28,7 +28,8 @@ i {
   position: fixed;
   z-index: 10;
 }
-.header_inner {
+
+.headerInner {
   width: 95%;
   height: 40px;
   margin: auto;
@@ -39,38 +40,38 @@ i {
   top: 28px;
 }
 
-.header_inner > .image {
+.headerInner > .headerLogo {
   display: flex;
 }
 
-.header_inner > .image > i {
+.headerInner > .headerLogo > i {
   font-size: 25px;
   color: white;
   margin: 5px 0;
 }
 
-.header_inner > .image > img {
+.headerInner > .headerLogo > img {
   margin-left: 30px;
   width: 300px;
   cursor: pointer;
 }
 
-.header_inner > .icons {
+.headerInner > .headerIcons {
   display: flex;
   flex-direction: row;
 }
 
-.header_inner > .icons > i {
+.headerInner > .headerIcons > i {
   color: white;
   font-size: 25px;
   margin: 5px 0;
 }
 
-.header_inner > .icons > i + i {
+.headerInner > .headerIcons > i + i {
   margin-left: 15px;
 }
 
-.header_inner > .icons > span {
+.headerInner > .headerIcons > span {
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -84,16 +85,16 @@ i {
   cursor: pointer;
 }
 
-.main_container {
+.mainContainer {
   display: flex;
   flex-direction: row;
   width: 100%;
   overflow: hidden;
 }
 
-.image_container_1,
-.image_container_2,
-.image_container_3 {
+.imageContainerOne,
+.imageContainerTwo,
+.imageContainerThree {
   width: 33.4%;
   height: 100vh;
   position: relative;
@@ -104,9 +105,9 @@ img {
   height: 100%;
 }
 
-.black_container1,
-.black_container2,
-.black_container3 {
+.blackContainerOne,
+.blackContainerTwo,
+.blackContainerThree {
   display: block;
   background-color: black;
   opacity: 0.5;
@@ -118,14 +119,14 @@ img {
   left: 0;
 }
 
-.image_container_1:hover .black_container1,
-.image_container_2:hover .black_container2,
-.image_container_3:hover .black_container3 {
+.imageContainerOne:hover .blackContainerOne,
+.imageContainerTwo:hover .blackContainerTwo,
+.imageContainerThree:hover .blackContainerThree {
   opacity: 0;
   transition: all 0.7s ease;
 }
 
-.inner {
+.imageContainerInner {
   color: white;
   text-align: center;
   width: 100%;
@@ -140,11 +141,11 @@ img {
     sans-serif;
 }
 
-.inner > h1 + button {
+.imageContainerInner > h1 + button {
   margin-top: 40px;
 }
 
-.inner > button {
+.imageContainerInner > button {
   width: 150px;
   height: 40px;
   background-color: transparent;
@@ -159,11 +160,11 @@ img {
   transition: all 0.3s ease;
   overflow: hidden;
 }
-.inner > button:focus {
+.imageContainerInner > button:focus {
   outline: none;
 }
 
-.inner > button::before {
+.imageContainerInner > button::before {
   content: "";
   color: black;
   position: absolute;
@@ -176,15 +177,15 @@ img {
   z-index: -1;
 }
 
-.inner > button:hover::before {
+.imageContainerInner > button:hover::before {
   transform: translateX(100%);
 }
 
-.inner > button:hover {
+.imageContainerInner > button:hover {
   color: black;
 }
 
-.side_bar {
+.sideBarContainer {
   width: 400px;
   height: 100%;
   background-color: white;
@@ -197,7 +198,7 @@ img {
   transition: all 0.3s ease;
 }
 
-.side_bar > .inner {
+.sideBarContainer > .sideBarInner {
   width: 280px;
   height: 500px;
   color: black;
@@ -211,19 +212,19 @@ img {
   text-transform: uppercase;
 }
 
-.side_bar > .inner > i {
+.sideBarContainer > .sideBarInner > i {
   cursor: pointer;
 }
 
-.side_bar > .inner > ul > li > a,
-.side_bar_add_ladies > .inner_add_ladies > ul > li > a,
-.side_bar_add_man > .inner_add_man > ul > li > a {
+.sideBarContainer > .sideBarInner > ul > li > a,
+.sideBarAddLadies > .innerAddLadies > ul > li > a,
+.sideBarAddMan > .innerAddMan > ul > li > a {
   position: relative;
 }
 
-.side_bar > .inner > ul > li > a::before,
-.side_bar_add_ladies > .inner_add_ladies > ul > li > a::before,
-.side_bar_add_man > .inner_add_man > ul > li > a::before {
+.sideBarContainer > .sideBarInner > ul > li > a::before,
+.sideBarAddLadies > .innerAddLadies > ul > li > a::before,
+.sideBarAddMan > .innerAddMan > ul > li > a::before {
   content: "";
   width: 0;
   height: 3px;
@@ -235,15 +236,15 @@ img {
   left: 0;
 }
 
-.side_bar > .inner > ul > li > a:hover::before,
-.side_bar_add_ladies > .inner_add_ladies > ul > li > a:hover::before,
-.side_bar_add_man > .inner_add_man > ul > li > a:hover::before {
+.sideBarContainer > .sideBarInner > ul > li > a:hover::before,
+.sideBarAddLadies > .innerAddLadies > ul > li > a:hover::before,
+.sideBarAddMan > .innerAddMan > ul > li > a:hover::before {
   width: 100%;
   background-color: black;
 }
 
-.side_bar_add_ladies,
-.side_bar_add_man {
+.sideBarAddLadies,
+.sideBarAddMan {
   width: 400px;
   height: 100%;
   background-color: white;
@@ -257,8 +258,8 @@ img {
   transition: all 0.7s ease;
 }
 
-.side_bar_add_ladies > .inner_add_ladies,
-.side_bar_add_man > .inner_add_man {
+.sideBarAddLadies > .innerAddLadies,
+.sideBarAddMan > .innerAddMan {
   left: 70px;
   width: 280px;
   height: 500px;

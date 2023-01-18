@@ -1,9 +1,9 @@
 const threeBar = document.querySelector(".threebar");
 const xBar = document.querySelector(".xbar");
 
-const sideBar = document.querySelector(".side_bar");
-const sideBarAddMan = document.querySelector(".side_bar_add_man");
-const sideBarAddLadies = document.querySelector(".side_bar_add_ladies");
+const sideBar = document.querySelector(".sideBarContainer");
+const sideBarAddMan = document.querySelector(".sideBarAddMan");
+const sideBarAddLadies = document.querySelector(".sideBarAddLadies");
 
 const man = document.querySelector(".man");
 const ladies = document.querySelector(".ladies");
